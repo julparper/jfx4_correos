@@ -55,7 +55,8 @@
                         <!-- Test: mvn test-->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>es.etg.prog.correos.App</mainClass>
+                            <!-- nombre del módulo/clase main. El nombre del módulo lo puedes sacar del modules.info y clase del main-->
+                            <mainClass>es.etg.prog.correos/es.etg.prog.correos.App</mainClass>
                         </configuration>
                     </execution>
                 </executions>
