@@ -1,7 +1,5 @@
 package es.etg.prog.correos.view;
 
-import java.net.ProtocolException;
-
 import es.etg.prog.correos.controller.CorreosController;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
