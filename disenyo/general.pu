@@ -1,0 +1,10 @@
+@startuml
+
+component view
+component model
+component controller
+
+view ..> controller
+controller ..>model
+
+@enduml

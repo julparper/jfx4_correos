@@ -1,0 +1,26 @@
+@startuml
+
+set namespaceSeparator none
+package es.etg.prog.correos.model{
+    class Envio{
+        +{static} PESO_ENVIO_PEQUENYO:double = 5
+        +{static} PESO_ENVIO_MEDIANO:double = 10
+        +{static} PRECIO_ENVIO_PEQUENYO:double = 23.10
+        +{static} PRECIO_ENVIO_MEDIANO:double = 27.50
+        +{static} PRECIO_KG_ADICIONAL:double = 1.29
+        -destinatario: String
+        -direccion: String
+        -peso: double
+        -unidad: UnidadMasa
+
+        +calcularPrecio():double
+        +facturar():String
+    }
+
+    enum UnidadMasa{
+        KG:String = "KG"
+    }
+
+}
+
+@enduml

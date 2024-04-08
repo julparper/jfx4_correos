@@ -1,20 +1,20 @@
 package es.etg.prog.correos.controller;
 
-import java.io.IOException;
-
 import es.etg.prog.correos.App;
 import es.etg.prog.correos.model.Envio;
 import es.etg.prog.correos.view.FormularioViewController;
+import java.io.IOException;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+
 public class CorreosController extends Application{
 
     // Referencia a la interfaz gráfica para cargarla
-    private final static String VIEW_MAIN = "view/formularioView.fxml";
+    private final static String MAIN_VIEW = "view/formularioView.fxml";
     private final static String WIN_TITLE = "Aplicación DAW Correos";
     private static Scene scene;
 
@@ -29,8 +29,9 @@ public class CorreosController extends Application{
     public void start(Stage stage) throws IOException {
 
         //Cargo la vista
-        stage.setScene(cargarVista(VIEW_MAIN));
+        stage.setScene(cargarVista(MAIN_VIEW));
         stage.setTitle(WIN_TITLE);
+        stage.setResizable(false);
         stage.show();
     }
 
@@ -42,8 +43,6 @@ public class CorreosController extends Application{
         FormularioViewController viewController = fxmlLoader.<FormularioViewController>getController();
         viewController.setCorreosController(this);
         Scene scene = new Scene(root); 
-
-        
         return scene;
     }
 
