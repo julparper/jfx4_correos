@@ -13,3 +13,5 @@ Descarga el código del proyecto ```git@github.com:julparper/jfx2_mvcsimple.git`
 9. Agrega un breakpoint en el método del controlador crear alumno y observa que pasa en la lista de alumnos del ```Instituto``` cada vez que se matricula un nuevo alumno.
 
 >Agrega los breakpoints que estimes oportunos para entender el funcionamiento de toda la aplicación. Prueba a cambiar todo lo que estimes oportuno para observar como afectan los cambios en la aplicación.
+
+Cambiado para pruebas
