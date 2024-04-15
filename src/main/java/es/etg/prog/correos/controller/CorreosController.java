@@ -16,10 +16,9 @@ public class CorreosController extends Application{
     // Referencia a la interfaz gráfica para cargarla
     private final static String MAIN_VIEW = "view/formularioView.fxml";
     private final static String WIN_TITLE = "Aplicación DAW Correos";
-    private static Scene scene;
 
     //Lógica de negocio (modelo)
-    private static Envio model;
+    //private static Envio model;
 
     
     // Este método se llama al ejecutar lanzar la aplicación
