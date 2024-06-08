@@ -30,7 +30,7 @@ public class CorreosController extends Application{
         //Cargo la vista
         stage.setScene(cargarVista(MAIN_VIEW));
         stage.setTitle(WIN_TITLE);
-        stage.setResizable(false);
+        //stage.setResizable(false);
         stage.show();
     }
 
